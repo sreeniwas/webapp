@@ -33,5 +33,5 @@ node ('master') {
      withEnv(["PATH+MAVEN=${tool 'maven3.3'}/bin"]) {
           sh "mvn clean package"
      }
-	 archiveArtifacts '**/*.jar'
+	 archiveArtifacts '**/*.war'
 }
